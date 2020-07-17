@@ -3,18 +3,14 @@ by **Ming-Lun "Allen" Chou** / [AllenChou.net](http://AllenChou.net) / [@TheAlle
 
 ![](/img/smooth-sphere-union.gif) ![](/img/interactive-game-objects.gif) ![](/img/heat-maps.gif)
 
-## Features (Including Planned)
-  * Global Boolean operations: union, subtraction, intersection (WIP).
+## Features
+  * Smooth Boolean operations: union, subtraction, intersection.
   * Heat maps: number of ray steps & number of SDF evaluations.
-  * [Planned] Local Boolean operations.
-  * [Planned] Materials.
-  * [Planned] Volumetric ray marching, e.g. fog, clouds, etc.
+  * Final rendered image entirely generated using compute shader.
 
 ## Optimization Techniques
   * Bounding volume hierarchy (BVH) using dynamic AABB trees.
-  * Per-pixel ray cast against BVH.
-  * [WIP] Per-tile frustum culling against BVH.
-  * [WIP] Occlusion culling.
+  * AABB query & ray query against AABB trees on GPU.
 
 ## References & Resources
   * [How Ray Marching & Signed Distance Fields (SDF) Work](http://www.michaelwalczyk.com/blog/2017/5/25/ray-marching)
